@@ -1,0 +1,374 @@
+/* Booking time */
+
+main {
+    /* Desktop (Widescreen) */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 48px;
+
+position: relative;
+width: 1680px;
+height: 1120px;
+
+/* White */
+
+background: #FFFFFF;
+}
+
+/* ------------------ DATE SECTION -------------------- */
+
+.bookingTime {
+    position: static;
+width: 94px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Text */
+
+color: #000000;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.september {
+    /* 01-14 September */
+
+position: static;
+width: 186px;
+height: 32px;
+left: 0px;
+top: 32px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+/* Text */
+
+color: #000000;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+/* ---------------- RESULTS SECTION ----------------- */
+
+.results {
+    /* List */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 1584px;
+height: 936px;
+left: 48px;
+top: 136px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 24px 0px;
+}
+
+.resultsNumber {
+    /* 6 results */
+
+
+position: static;
+width: 62px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.bookingResults {
+    /* Item */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 24px;
+
+position: static;
+width: 1584px;
+height: 144px;
+left: 0px;
+top: 32px;
+
+/* Border */
+
+border: 1px solid #DDDDDD;
+box-sizing: border-box;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.picture {
+    /* Rectangle 1 */
+
+
+position: static;
+width: 144px;
+height: 96px;
+left: 0px;
+top: 0px;
+
+background: url(.jpg);
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 24px;
+}
+
+.addressContainer {
+    /* Address */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 177px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.holidayInn {
+    /* Holiday Inn */
+
+
+position: static;
+width: 81px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.address {
+    /* Rolna 12, Poznań 61-490 */
+
+
+position: static;
+width: 177px;
+height: 24px;
+left: 0px;
+top: 24px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.priceTimeContainer {
+    /* Frame 1 */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+
+position: static;
+width: 176px;
+height: 32px;
+left: 0px;
+top: 64px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.price {
+    /* EUR 120 */
+
+
+position: static;
+width: 92px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 4px;
+}
+
+.reservContainer {
+    display: flex;
+    align-content: center;
+}
+
+.reservationTime {
+    /* for 14 days */
+
+
+position: static;
+/* display: flex;
+align-items:baseline; */
+width: 80px;
+height: 26px;
+left: 96px;
+top: 6px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+display: flex;
+align-items: flex-end;
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 4px;
+}
