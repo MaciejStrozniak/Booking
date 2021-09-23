@@ -631,10 +631,51 @@ flex-grow: 0;
 margin: 8px 0px;
 }
 
-.confirmBooking {
+input[type=submit] {
+    /* Button */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 24px;
+
+position: static;
+width: 480px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+/* Button */
+
+background: #0081DF;
+opacity: 0.2;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+}
+
+/* .confirmBooking { */
 /* Confirm booking */
 
-
+/* 
 position: static;
 width: 119px;
 height: 24px;
@@ -645,22 +686,22 @@ font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 24px;
+line-height: 24px; */
 /* identical to box height, or 150% */
 
 
 /* White */
 
-color: #FFFFFF;
+/* color: #FFFFFF; */
 
 
 /* Inside Auto Layout */
 
-flex: none;
+/* flex: none;
 order: 0;
 flex-grow: 0;
 margin: 0px 10px;
-}
+} */
 
 .closeButton {
 /* Frame 25 */

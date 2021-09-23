@@ -97,7 +97,10 @@
                                 </div>
                             </div>
                         </div>
-                        <form action="">
+
+                        <!-- FORM FOR INPUTS / CHECK IF METHOD POST IS CORRECT -->
+
+                        <form action="" method="POST"> 
                             <div class="frame2PopUp">
                                 <p class="bookingDetails">Booking details</p>
                                 <div class="frame3PopUp">
@@ -114,10 +117,10 @@
                                 </div>
                             </div>                       
                             <div class="buttonsPopUp">
-                                <button data-confirm class="confirmButton">
+                                <!-- <button data-confirm class="confirmButton">
                                     <p class="confirmBooking">Confirm booking</p>
-                                </button>
-                                <!-- <input id="input" type="submit"> -->
+                                </button> -->
+                                <input id="input" type="submit" value="Confirm booking" class="confirmButton">
                                 <button data-close class="closeButton">
                                     <p class="closeBooking">Close</p>
                                 </button>
@@ -216,7 +219,28 @@
                 </button>
             </div>
         </section>
+
+        <!------------------------ OVERLAY FOR POPUP ----------------------------->
+
         <div id="overlay"></div>
+
+        <!-- <script>
+            function verify(){
+                var value = document.forms[0].item.value; // or replace document.forms[0].item by document.getElementById('name')
+                var objective = "I'm a duck";
+                if(objective != value){
+                    document.forms[0].item.style.color="#FF3300";
+                    return false;
+                } else {
+                    document.forms[0].item.style.color="lightgreen";
+                }
+                return true;
+            }
+        </script>
+        <form action="" method="" onSubmit="verify();">
+            <input type="text" name="item" id="name" class="input"  maxlength="50"  pattern="[A-Za-z\\s]*" placeholder="Name" required>
+        <input type="submit" value="Submit" id="Submit">
+        </form> -->
     </main>
 </body>
 </html>
