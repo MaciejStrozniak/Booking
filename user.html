@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.4">
     <link rel="stylesheet" href="app/CSS/reset.css">
     <link rel="stylesheet" href="app/CSS/style-user.css">
+    <link rel="stylesheet" href="app/CSS/style-popup.css">
     <script type="module" src="app/JS/user.js" defer></script>
     <title>Booking</title>
 </head>
@@ -66,6 +67,70 @@
                 <button data-booking class="button">
                     <p class="bookApartment">Book apartment</p>
                 </button>
+
+                <!------------------------- POPUP --------------------------------->
+
+                <div id="myModal" class="modal">
+                    <!-- <span class="close">&times;</span> -->
+                    <div class="dialogDesktop modal-content">
+                        <div class="heading">
+                            <p class="bookingTimePopUp">Booking time</p>
+                            <p class="septemberPopUp">01-14 September</p>
+                        </div>
+                        <div class="frame1PopUp">
+                            <p class="apartment">Apartment</p>
+                            <div class="leftPopUp">
+                                <div class="rectanglePopUp">
+                                    <picture>
+                                        <img src="/images/Rectangle 1.jpg" alt="pool at the hotel" />
+                                    </picture>
+                                </div>
+                                <div class="detailsPopUp">
+                                    <div class="addressPopUp">
+                                        <p class="holidayInnPopUp">Holiday Inn</p>
+                                        <p class="rolnaPopUp">Rolna 12, Poznań 61-490</p>
+                                    </div>
+                                    <div class="frameOnePopUp">
+                                        <p class="euroPopUp">EUR 120</p>
+                                        <p class="forDaysPopUp">for 14 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame2PopUp">
+                            <p class="bookingDetails">Booking details</p>
+                            <div class="frame3PopUp">
+                                <input type="text" class="label" id="name" name="name" placeholder="Name" required >
+                            </div>
+                            <div class="frame3PopUp">
+                                <input type="text" class="label" id="surname" name="surname" placeholder="Surname" required >
+                            </div>
+                            <div class="frame3PopUp">
+                                <input type="text" class="label" id="email" name="email" placeholder="Email" required >
+                            </div>
+                            <div class="frame3PopUp">
+                                <input type="text" class="label" id="mobile" name="mobile" placeholder="Mobile phone" required >
+                            </div>
+                        </div>
+
+                        <!-- Modal content
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Some text in the Modal..</p>
+                      </div> -->
+                    
+                        <div class="buttonsPopUp">
+                            <button class="confirmButton">
+                                <p class="confirmBooking">Confirm booking</p>
+                            </button>
+                            <button class="closeButton">
+                                <p class="closeBooking">Close</p>
+                            </button>
+                        </div>
+                    </div>
+                 </div>
+
+
             </div>
             <div class="item">
                 <div class="left">
@@ -156,7 +221,6 @@
                 </button>
             </div>
         </section>
-        
     </main>
 </body>
 </html>

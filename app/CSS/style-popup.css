@@ -1,0 +1,718 @@
+
+/* The Modal (background) */
+.modal {
+    
+border: solid 3px black;
+  
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 55em;
+  top: 6.5em;
+  
+/* Dialog: Form: Desktop */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 24px;
+
+/* position: relative */
+position: fixed;
+width: 528px;
+/* width: auto; */
+/* height: 808px; */
+height: auto;
+
+/* White */
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+
+
+.heading {
+    /* Heading */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 480px;
+height: 64px;
+left: 24px;
+top: 24px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 24px 0px;
+}
+
+.bookingTimePopUp {
+/* Booking time */
+
+
+position: static;
+width: 94px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.septemberPopUp {
+/* 01-14 September */
+
+
+position: static;
+width: 186px;
+height: 32px;
+left: 0px;
+top: 32px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.frame1PopUp {
+/* Frame 1 */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 480px;
+height: 176px;
+left: 24px;
+top: 112px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 24px 0px;
+}
+
+.apartment {
+    /* Apartment */
+
+
+position: static;
+width: 76px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.leftPopUp {
+/* Item */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 24px;
+
+position: static;
+width: 480px;
+height: 144px;
+left: 0px;
+top: 32px;
+
+/* Border */
+
+border: 1px solid #DDDDDD;
+box-sizing: border-box;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.rectanglePopUp {
+/* Rectangle 1 */
+
+
+position: static;
+width: 144px;
+height: 96px;
+left: 0px;
+top: 0px;
+
+background: url(.jpg);
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 24px;
+}
+
+.detailsPopUp {
+/* Details */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 264px;
+height: 96px;
+left: 168px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+margin: 0px 24px;
+}
+
+.addressPopUp {
+/* Address */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 177px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.holidayInnPopUp {
+/* Holiday Inn */
+
+
+position: static;
+width: 81px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.rolnaPopUp {
+/* Rolna 12, Poznań 61-490 */
+
+
+position: static;
+width: 177px;
+height: 24px;
+left: 0px;
+top: 24px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.frameOnePopUp {
+/* Frame 1 */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+
+position: static;
+width: 176px;
+height: 32px;
+left: 0px;
+top: 64px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.euroPopUp {
+/* EUR 120 */
+
+
+position: static;
+width: 92px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 4px;
+}
+
+.forDaysPopUp {
+/* for 14 days */
+
+
+position: static;
+width: 80px;
+height: 26px;
+left: 96px;
+top: 6px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+display: flex;
+align-items: flex-end;
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 4px;
+}
+
+.frame2PopUp {
+/* Frame 2 */
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 480px;
+height: auto;
+left: 24px;
+top: 312px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+margin: 24px 0px;
+}
+
+.bookingDetails {
+/* Booking details */
+
+
+position: static;
+width: 110px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.frame3PopUp {
+/* Frame 3 */
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 20px 16px;
+
+position: static;
+width: 480px;
+height: 64px;
+left: 0px;
+top: 32px;
+
+/* Border */
+
+border: 1px solid #DDDDDD;
+box-sizing: border-box;
+border-radius: 10px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.label {
+/* Name */
+/* border: solid black 10px; */
+
+border: none;
+position: static;
+/* width: 43px; */
+width: 100%;
+height: 24px;
+left: 16px;
+top: 20px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 8px;
+}
+
+.buttonsPopUp {
+/* Buttons */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+/* border: solid black 3px; */
+position: static;
+width: 480px;
+height: 150px;
+left: 24px;
+top: 648px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+margin: 24px 0px;
+}
+
+.confirmButton {
+/* Button */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 24px;
+
+position: static;
+width: 480px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+/* Button */
+
+background: #0081DF;
+opacity: 0.2;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.confirmBooking {
+/* Confirm booking */
+
+
+position: static;
+width: 119px;
+height: 24px;
+left: 180.5px;
+top: 20px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* White */
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+}
+
+.closeButton {
+/* Frame 25 */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 24px;
+
+position: static;
+width: 480px;
+height: 64px;
+left: 0px;
+top: 72px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.closeBooking {
+/* Close */
+
+
+position: static;
+width: 41px;
+height: 24px;
+left: 219.5px;
+top: 20px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Text */
+
+color: #000000;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+}
+
+/* The Close Button */
+/* .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
