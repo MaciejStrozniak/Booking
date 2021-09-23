@@ -1,10 +1,14 @@
 
+.background {
+    background-color: darkgray;
+    z-index: 1;
+}
 /* The Modal (background) */
 .modal {
     
 border: solid 3px black;
   
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 55em;
   top: 6.5em;
@@ -31,8 +35,22 @@ height: auto;
 
 background: #FFFFFF;
 border-radius: 10px;
+
+/* Hide popup */
+
+display: none; /* Hidden by default */
+
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
 
 
 .heading {
