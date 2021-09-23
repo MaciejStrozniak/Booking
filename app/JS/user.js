@@ -18,6 +18,12 @@ bookingButton.forEach((btn) => {
     });
 });
 
+overlay.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+
+});
+
 closeBtn.addEventListener('click', () => {
     if(modal.style.display === 'block')
     {
