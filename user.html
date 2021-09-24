@@ -71,7 +71,6 @@
                 <!------------------------- POPUP --------------------------------->
 
                 <div id="myModal" class="modal">
-                    <!-- <span class="close">&times;</span> -->
                     <div class="dialogDesktop modal-content">
                         <div class="heading">
                             <p class="bookingTimePopUp">Booking time</p>
@@ -100,7 +99,7 @@
 
                         <!-- FORM FOR INPUTS / CHECK IF METHOD POST IS CORRECT -->
 
-                        <form action="" method="POST"> 
+                        <form action="user.html" method=""> 
                             <div class="frame2PopUp">
                                 <p class="bookingDetails">Booking details</p>
                                 <div class="frame3PopUp">
@@ -110,7 +109,7 @@
                                     <input type="text" class="label" id="surname" name="surname" placeholder="Surname" required >
                                 </div>
                                 <div class="frame3PopUp">
-                                    <input type="text" class="label" id="email" name="email" placeholder="Email" required >
+                                    <input type="email" class="label" id="email" name="email" placeholder="Email" required >
                                 </div>
                                 <div class="frame3PopUp">
                                     <input type="text" class="label" id="mobile" name="mobile" placeholder="Mobile phone" required >
@@ -128,7 +127,14 @@
                         </form>
                         
                     </div>
-                 </div>
+                </div>
+
+            <!-- CONFIRMATION POPUP UNDER CONSTRUCTION -->
+                <div>
+
+                </div>
+            <!--  -->
+
             </div>
             <div class="item">
                 <div class="left">
@@ -223,24 +229,6 @@
         <!------------------------ OVERLAY FOR POPUP ----------------------------->
 
         <div id="overlay"></div>
-
-        <!-- <script>
-            function verify(){
-                var value = document.forms[0].item.value; // or replace document.forms[0].item by document.getElementById('name')
-                var objective = "I'm a duck";
-                if(objective != value){
-                    document.forms[0].item.style.color="#FF3300";
-                    return false;
-                } else {
-                    document.forms[0].item.style.color="lightgreen";
-                }
-                return true;
-            }
-        </script>
-        <form action="" method="" onSubmit="verify();">
-            <input type="text" name="item" id="name" class="input"  maxlength="50"  pattern="[A-Za-z\\s]*" placeholder="Name" required>
-        <input type="submit" value="Submit" id="Submit">
-        </form> -->
     </main>
 </body>
 </html>
