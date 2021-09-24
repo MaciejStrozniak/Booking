@@ -15,6 +15,11 @@ class Client
         this.surname = surnameTextElement.value;
         this.email = emailTextElement.value;
         this.mobilePhone = mobileTextElement.value;
+
+        window.localStorage.setItem('name', JSON.stringify(this.name));
+        window.localStorage.setItem('surname', JSON.stringify(this.name));
+        window.localStorage.setItem('email', JSON.stringify(this.email));
+        window.localStorage.setItem('mobilePhone', JSON.stringify(this.mobilePhone));
     }
 }
 
@@ -31,7 +36,7 @@ let nameTextElement = document.getElementById('name');
 let surnameTextElement = document.getElementById('surname');
 let emailTextElement = document.getElementById('email');
 let mobileTextElement = document.getElementById('mobile');
-// let testBtn = document.querySelector('[data-test]');
+let testBtn = document.querySelector('[data-test]');
 
 // ------------ creating client object -----------------
 
@@ -41,7 +46,6 @@ const client = new Client(nameTextElement, surnameTextElement, emailTextElement,
 
 bookingButton.forEach((btn) => {
     btn.addEventListener('click', () => {
-// inputText.innerHTML.valueOf = 'Confirm booking';
 
         modal.style.display = 'block';
         overlay.style.display = 'block';
@@ -69,9 +73,9 @@ confirmBtn.addEventListener('click', () => {
     console.log(client.name);
 });
 
-// testBtn.addEventListener('click', () => {
-//     console.log(client.name);
-//     console.log(client.surname);
-//     console.log(client.email);
-//     console.log(client.mobilePhone);
-// });
+testBtn.addEventListener('click', () => {
+    console.log(window.localStorage.getItem('name'));
+    console.log(window.localStorage.getItem('surname'));
+    console.log(window.localStorage.getItem('email'));
+    console.log(window.localStorage.getItem('mobilePhone'));
+});
