@@ -17,7 +17,7 @@ class Client
         this.mobilePhone = mobileTextElement.value;
 
         window.localStorage.setItem('name', JSON.stringify(this.name));
-        window.localStorage.setItem('surname', JSON.stringify(this.name));
+        window.localStorage.setItem('surname', JSON.stringify(this.surname));
         window.localStorage.setItem('email', JSON.stringify(this.email));
         window.localStorage.setItem('mobilePhone', JSON.stringify(this.mobilePhone));
     }
@@ -71,6 +71,8 @@ closeBtn.addEventListener('click', () => {
 confirmBtn.addEventListener('click', () => {
     client.saveData();
     console.log(client.name);
+    let save = true;
+    let saveAdmin = window.localStorage.setItem('save', JSON.stringify(save));
 });
 
 testBtn.addEventListener('click', () => {
