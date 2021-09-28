@@ -71,8 +71,8 @@ closeBtn.addEventListener('click', () => {
 confirmBtn.addEventListener('click', () => {
     client.saveData();
     console.log(client.name);
-    let save = true;
-    let saveAdmin = window.localStorage.setItem('save', JSON.stringify(save));
+    let saveThis = true;
+    let saveAdmin = window.localStorage.setItem('save', JSON.stringify(saveThis));
 });
 
 testBtn.addEventListener('click', () => {
@@ -81,3 +81,4 @@ testBtn.addEventListener('click', () => {
     console.log(window.localStorage.getItem('email'));
     console.log(window.localStorage.getItem('mobilePhone'));
 });
+

@@ -1,5 +1,6 @@
 let loadBtn = document.querySelector('[data-loadFile]');
 let clearBtn = document.querySelector('[data-clearFile]');
+let removeBtn = document.querySelector('[data-remove]');
 
 class Booking
 {
@@ -32,10 +33,12 @@ let save = window.localStorage.getItem('save');
 
 let saveArrayLocaly = () => {
     
-    if(save === true) {
+    // if(bookingsArray)
+
+    if(save === true) { // TEN WARUNEK NIE DZIAŁA POPRAWNIE !!!!!!!!!!!!!!!!!
         window.localStorage.setItem('bookingArray', JSON.stringify(bookingsArray));
-        save = false;
-        window.localStorage.setItem('save', JSON.stringify(save));
+        // save = false;
+        // window.localStorage.setItem('save', JSON.stringify(save));
         
     }
     let localBookingArray = JSON.parse(window.localStorage.getItem('bookingArray'));
@@ -46,7 +49,14 @@ let saveArrayLocaly = () => {
 
 loadBtn.addEventListener('click', () => {
     // fillArray();
-    // saveArrayLocaly();
+    saveArrayLocaly();
+
+    if (save === true) {
+        save = false;
+        window.localStorage.setItem('save', JSON.stringify(save));
+    }
+
+
     console.log(save);
     // console.log(newBooking);
     // console.log(bookingsArray);
@@ -58,3 +68,6 @@ clearBtn.addEventListener('click', () => {
     window.localStorage.clear();
 });
 
+removeBtn.addEventListener('click', () => {
+    window.localStorage.removeItem('bookingArray');
+});
