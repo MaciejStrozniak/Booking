@@ -1,5 +1,4 @@
 let loadBtn = document.querySelector('[data-loadFile]');
-let clearBtn = document.querySelector('[data-clearFile]');
 let removeBtn = document.querySelector('[data-remove]');
 
 class Booking
@@ -20,54 +19,43 @@ let email = JSON.parse(window.localStorage.getItem('email'));
 let mobilePhone = JSON.parse(window.localStorage.getItem('mobilePhone'));
 
 let newBooking  = new Booking(name, surname, email, mobilePhone);
+let localBookingArray;
+let removeConfirmation = true;
 
-let bookingsArray = [];
+let save = JSON.parse(window.localStorage.getItem('save'));
 
-let save = window.localStorage.getItem('save');
-
-// let fillArray = () => {
-//     bookingsArray.push(newBooking);
-//     save = true;
-//     return bookingsArray;
-// }; 
-
-let saveArrayLocaly = () => {
+let testArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+ 
+let SaveArrayLocaly = () => {
     
-    // if(bookingsArray)
-
-    if(save === true) { // TEN WARUNEK NIE DZIAŁA POPRAWNIE !!!!!!!!!!!!!!!!!
+    if(save === true) { 
+        let bookingsArray = [];
         window.localStorage.setItem('bookingArray', JSON.stringify(bookingsArray));
-        // save = false;
-        // window.localStorage.setItem('save', JSON.stringify(save));
-        
+        save = false;
+        window.localStorage.setItem('save', JSON.stringify(save));       
     }
-    let localBookingArray = JSON.parse(window.localStorage.getItem('bookingArray'));
-    localBookingArray.push(newBooking);
-    window.localStorage.setItem('bookingArray', JSON.stringify(localBookingArray));
+
+    if (removeConfirmation === true) {
+        localBookingArray = JSON.parse(window.localStorage.getItem('bookingArray'));
+        localBookingArray.push(newBooking);
+        window.localStorage.setItem('bookingArray', JSON.stringify(localBookingArray));
+    } else removeConfirmation = true;
+    
 }
 
-
 loadBtn.addEventListener('click', () => {
-    // fillArray();
-    saveArrayLocaly();
-
-    if (save === true) {
-        save = false;
-        window.localStorage.setItem('save', JSON.stringify(save));
-    }
-
-
-    console.log(save);
-    // console.log(newBooking);
-    // console.log(bookingsArray);
+    SaveArrayLocaly();
+    
     // console.log(bookingsArray[0].name, bookingsArray[0].email);
     console.log(JSON.parse(window.localStorage.getItem('bookingArray')));
 });
 
-clearBtn.addEventListener('click', () => {
-    window.localStorage.clear();
+removeBtn.addEventListener('click', () => {
+    // window.localStorage.removeItem('bookingArray');
+    localBookingArray.pop();
+    window.localStorage.setItem('bookingArray', JSON.stringify(localBookingArray));
+    removeConfirmation = false;
 });
 
-removeBtn.addEventListener('click', () => {
-    window.localStorage.removeItem('bookingArray');
-});
+
+testArray.splice(5, 1);

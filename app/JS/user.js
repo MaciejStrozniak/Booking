@@ -10,7 +10,7 @@ class Client
         this.mobilePhone;
     }
 
-    saveData() {
+    SaveData() {
         this.name = nameTextElement.value;
         this.surname = surnameTextElement.value;
         this.email = emailTextElement.value;
@@ -69,10 +69,10 @@ closeBtn.addEventListener('click', () => {
 });
 
 confirmBtn.addEventListener('click', () => {
-    client.saveData();
+    client.SaveData();
     console.log(client.name);
-    let saveThis = true;
-    let saveAdmin = window.localStorage.setItem('save', JSON.stringify(saveThis));
+    // let saveThis = true;
+    // let saveAdmin = window.localStorage.setItem('save', JSON.stringify(saveThis));
 });
 
 testBtn.addEventListener('click', () => {
@@ -80,5 +80,7 @@ testBtn.addEventListener('click', () => {
     console.log(window.localStorage.getItem('surname'));
     console.log(window.localStorage.getItem('email'));
     console.log(window.localStorage.getItem('mobilePhone'));
+    let saveThis = true;
+    let saveAdmin = window.localStorage.setItem('save', JSON.stringify(saveThis));
 });
 
