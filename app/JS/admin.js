@@ -29,7 +29,11 @@ let removeConfirmation = true;
 let save = JSON.parse(window.localStorage.getItem('save'));
 
 let testArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
- 
+
+const newElement = document.querySelector('[data-main]');
+let sectionElement;
+
+
 let SaveArrayLocaly = () => {
     
     if(save === true) { 
@@ -52,7 +56,8 @@ loadBtn.addEventListener('click', () => {
     
     // console.log(bookingsArray[0].name, bookingsArray[0].email);
     console.log(JSON.parse(window.localStorage.getItem('bookingArray')));
-    testAddingElements();
+    addSectionHTML();
+    addElements();
 });
 
 removeBtn.addEventListener('click', () => {
@@ -64,12 +69,29 @@ removeBtn.addEventListener('click', () => {
 
 // ------------------------ ADDING PARTS TO DOM -----------------------
 
-let testAddingElements = () => {
-    let dateElement = document.createElement("div");
-    dateElement.classList.add('frame13');
-    const newElement = document.getElementById('frame4');
-    newElement.appendChild(dateElement);
-}
+let addSectionHTML = () => {
+    sectionElement = document.createElement('section');
+    sectionElement.classList.add('frame4');
+    sectionElement.setAttribute('id', 'nextSection');
+    // const newElement = document.querySelector('[data-main]');
+    newElement.appendChild(sectionElement);
+};
+
+let addElements = () => {
+    let dateElement = document.createElement('div');
+    dateElement.classList.add('frame3');
+    sectionElement.appendChild(dateElement);
+
+    let dateDiv = document.createElement('div');
+    dateDiv.classList.add('frame13');
+    dateElement.appendChild(dateDiv);
+
+    let dateParagraph = document.createElement('p');
+    dateParagraph.classList.add('date');
+    let dataHTML = JSON.parse(window.localStorage.getItem('bookingArray'));
+    dateParagraph.innerHTML = dataHTML[0].date;
+    dateDiv.appendChild(dateParagraph);
+};
 
 testArray.splice(5, 1);
 
