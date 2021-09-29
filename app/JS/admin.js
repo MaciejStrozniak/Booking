@@ -3,8 +3,10 @@ let removeBtn = document.querySelector('[data-remove]');
 
 class Booking
 {
-    constructor(name, surname, email, mobilePhone)
+    constructor(date, apartment, name, surname, email, mobilePhone)
     {
+        this.date = date;
+        this.apartment = apartment;
         this.name = name;
         this.surname = surname;
         this.email = email;
@@ -13,12 +15,14 @@ class Booking
 
 }
 
+let date = JSON.parse(window.localStorage.getItem('date'));
+let apartment = JSON.parse(window.localStorage.getItem('apartment'));
 let name = JSON.parse(window.localStorage.getItem('name'));
 let surname = JSON.parse(window.localStorage.getItem('surname'));
 let email = JSON.parse(window.localStorage.getItem('email'));
 let mobilePhone = JSON.parse(window.localStorage.getItem('mobilePhone'));
 
-let newBooking  = new Booking(name, surname, email, mobilePhone);
+let newBooking  = new Booking(date, apartment, name, surname, email, mobilePhone);
 let localBookingArray;
 let removeConfirmation = true;
 
@@ -58,4 +62,39 @@ removeBtn.addEventListener('click', () => {
 });
 
 
+// function testAddingElements() {
+//     let 
+// }
+
 testArray.splice(5, 1);
+
+// dotsManipulate() {
+       
+//     if(metronome.isRunning === true) return;
+//     else {
+//             let dot = document.createElement("div"); // dot przechowuje nowy element
+//             dot.classList.add("dot"); // dodanie klasy do nowego dot
+//             dot.setAttribute("id", `dot${this.measure}`); // dodatnie id do nowego dot
+//         const element = document.getElementById("dots"); // powiązanie z section dots
+    
+//         if(this.measure <= 12 && this.measure != 1) {
+            
+//             element.appendChild(dot); // dodanie elementu do sekcji dots
+
+//         }
+//         else {
+//             for(let i = 1; i <= 12; i++) {
+//                 const elementsToRemove = document.getElementById(`dot${i}`);
+//                     element.removeChild(elementsToRemove);
+//                     //   dotsArray.pop[i];
+//                     this.r = 1;
+//                     this.reset = true;
+//             }
+//         }
+
+//         if(this.reset === true) {
+//             element.appendChild(dot);
+//             this.reset = false;
+//         }
+//     } 
+// }

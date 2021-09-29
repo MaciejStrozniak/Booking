@@ -23,6 +23,23 @@ class Client
     }
 }
 
+class Reservation
+{
+    constructor(date, apartment)
+    {
+        this.date;
+        this.apartment;
+    }
+
+    SaveApartment() {
+        this.date = date.innerHTML;
+        this.apartment = apartment.innerHTML;
+
+        window.localStorage.setItem('date', JSON.stringify(this.date));
+        window.localStorage.setItem('apartment', JSON.stringify(this.apartment));
+    }
+}
+
 // ----------- Linking functions to DOM -------------
 
 let modal = document.getElementById('myModal');
@@ -32,15 +49,18 @@ let closeBtn = document.querySelector('[data-close]');
 let confirmBtn = document.getElementById('input');
 // let confirmBtn = document.querySelector('[data-confirm]');
 
+let dateTextElement = document.getElementById('date');
+let apartmentTextElement = document.getElementById('apartment');
 let nameTextElement = document.getElementById('name');
 let surnameTextElement = document.getElementById('surname');
 let emailTextElement = document.getElementById('email');
 let mobileTextElement = document.getElementById('mobile');
 let testBtn = document.querySelector('[data-test]');
 
-// ------------ creating client object -----------------
+// ------------ creating client and apartment objects -----------------
 
 const client = new Client(nameTextElement, surnameTextElement, emailTextElement, mobileTextElement); 
+const reservation = new Reservation(dateTextElement, apartmentTextElement);
 
 // activating functions linked to buttons
 
@@ -70,6 +90,7 @@ closeBtn.addEventListener('click', () => {
 
 confirmBtn.addEventListener('click', () => {
     client.SaveData();
+    reservation.SaveApartment();
     console.log(client.name);
     // let saveThis = true;
     // let saveAdmin = window.localStorage.setItem('save', JSON.stringify(saveThis));
@@ -80,6 +101,8 @@ testBtn.addEventListener('click', () => {
     console.log(window.localStorage.getItem('surname'));
     console.log(window.localStorage.getItem('email'));
     console.log(window.localStorage.getItem('mobilePhone'));
+    console.log(window.localStorage.getItem('date'));
+    console.log(window.localStorage.getItem('apartment'));
     let saveThis = true;
     let saveAdmin = window.localStorage.setItem('save', JSON.stringify(saveThis));
 });
