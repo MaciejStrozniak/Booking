@@ -52,6 +52,7 @@ loadBtn.addEventListener('click', () => {
     
     // console.log(bookingsArray[0].name, bookingsArray[0].email);
     console.log(JSON.parse(window.localStorage.getItem('bookingArray')));
+    testAddingElements();
 });
 
 removeBtn.addEventListener('click', () => {
@@ -61,10 +62,14 @@ removeBtn.addEventListener('click', () => {
     removeConfirmation = false;
 });
 
+// ------------------------ ADDING PARTS TO DOM -----------------------
 
-// function testAddingElements() {
-//     let 
-// }
+let testAddingElements = () => {
+    let dateElement = document.createElement("div");
+    dateElement.classList.add('frame13');
+    const newElement = document.getElementById('frame4');
+    newElement.appendChild(dateElement);
+}
 
 testArray.splice(5, 1);
 
